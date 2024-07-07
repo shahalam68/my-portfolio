@@ -25,8 +25,8 @@ const Photo = () => {
             quality={100}
             fill
             alt=""
-            className="object-contain"
-            opacity="90"
+            className="object-contain opacity-80"
+            // opacity="90"
           />
         </motion.div>
         <motion.svg

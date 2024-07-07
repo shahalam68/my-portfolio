@@ -1,5 +1,6 @@
 import Photo from "@/components/Photo";
 import Social from "@/components/Social";
+import Stats from "@/components/Stats";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 const Home = () => {
@@ -21,7 +22,7 @@ const Home = () => {
               <Button
                 variant="outline"
                 size="lg"
-                className="uppercase flex items-center gap-2"
+                className="uppercase flex items-center gap-2 "
               >
                 <span>Download Cv</span> <FiDownload className="text-xl" />
               </Button>
@@ -38,6 +39,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Stats/>
     </section>
   );
 };

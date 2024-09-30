@@ -6,31 +6,18 @@ const services = [
     num: "01",
     title: "Web Development",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quisquam ",
+      "Highly motivated Full-Stack Web Developer with expertise in React.js and .NET, recognized for delivering clean, efficient, and reusable code. I focus on designing reactive web applications, managing states, and integrating APIs for real-time data updates.",
     href: "",
   },
   {
     num: "02",
-    title: "UI/UX Design",
+    title: "WordPress Design",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quisquam ",
-    href: "",
-  },
-  {
-    num: "03",
-    title: "Logo Design",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quisquam ",
-    href: "",
-  },
-  {
-    num: "04",
-    title: "SEO",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quisquam ",
+      "Experienced Freelance Web Designer on Fiverr with over 50+ projects completed. I specialize in WordPress design and have built multi-vendor e-commerce websites using Woocommerce. Achieved a level 1 seller badge through consistent delivery of quality projects.",
     href: "",
   },
 ];
+
 import { motion } from "framer-motion";
 const Services = () => {
   return (

@@ -26,7 +26,7 @@ import { motion } from "framer-motion";
 const about = {
   title: "About me",
   description:
-    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi aut omnis ex facilis perferendis, delectus quae eos",
+    "A highly motivated and ambitious Full-Stack Web Developer with expertise in React.js and .NET. Known for delivering clean, efficient, and reusable code while advancing web development to improve user experiences. Continuously adapting to new technologies and passionate about delivering high-quality solutions.",
   info: [
     {
       filedName: "Name:",
@@ -58,34 +58,41 @@ const about = {
     },
     {
       filedName: "Languages:",
-      fieldValue: "English,Bangla,Hindi",
+      fieldValue: "English, Bangla, Hindi",
     },
   ],
 };
 
 const experience = {
-  icon: "",
-  title: "My experience",
+  icon: "", // You can add an appropriate icon here
+  title: "My Experience",
   description:
-    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi aut omnis ex facilis perferendis, delectus quae eos.",
+    "With a diverse background in web development, I have gained significant expertise working with multiple frameworks and platforms. From freelance WordPress design to full-stack development using Next.js and ASP.Net, I continuously strive to deliver optimized and scalable solutions.",
   items: [
     {
-      company: "Astha IT Research & Consultancy Ltd",
-      position: "Inter Software Engineer",
+      company: "TechForing Ltd.",
+      position: "Frontend Developer",
+      duration: "2024 Aug - Present",
+      description: "Focused on designing and developing reactive web applications using Next.js, managing states, and integrating APIs for real-time data updates. Participated in code reviews and collaborated with the team to maintain coding standards.",
+      techStack: "Next.js, TypeScript, React Query, Zustand, Material UI, Tailwind CSS",
+    },
+    {
+      company: "Astha IT Research & Consultancy Ltd.",
+      position: "Software Engineer (Intern)",
       duration: "2024 Mar - 2024 Jun",
+      description: "Developed reactive web applications using Next.js and ASP.Net Core. Managed states with Zustand, integrated APIs for real-time data updates, and participated in code reviews.",
+      techStack: "Next.js, TypeScript, React Query, Zustand, Material UI, ASP.Net Core Web API, PostgreSQL",
     },
     {
-      company: "Fiverr.com",
-      position: "Freelance Wordpress Web Designer",
-      duration: "2019 Feb - 2021 Dec ",
-    },
-    {
-      company: "Branding By Branden",
-      position: "Freelance Wordpress Web Designer",
+      company: "Fiverr",
+      position: "Freelance WordPress Web Designer",
       duration: "2019 Feb - 2023 Dec",
+      description: "Completed over 50 projects as a freelance WordPress designer. Built e-commerce websites using Woocommerce and collaborated with various clients to deliver customized web solutions.",
+      techStack: "WordPress, Woocommerce",
     },
   ],
 };
+
 
 const education = {
   icon: "",

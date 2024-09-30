@@ -3,6 +3,7 @@ import Social from "@/components/Social";
 import Stats from "@/components/Stats";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
+
 const Home = () => {
   return (
     <section className="h-full">
@@ -12,20 +13,28 @@ const Home = () => {
             <span className="text-xl">Software Developer</span>
             <h1 className="h1 mb-6">
               Hello I&apos;m <br />{" "}
-              <span className="text-accent">A.K.M Shah Alam </span>
+              <span className="text-accent">A.K.M Shah Alam</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80 ">
-              I excel at creating elegant digital experience and i am proficient
+              I excel at creating elegant digital experiences and I am proficient
               in various programming languages and technologies.
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button
-                variant="outline"
-                size="lg"
-                className="uppercase flex items-center gap-2 "
+              {/* Wrapping the Button with an anchor tag */}
+              <a
+                href="https://drive.google.com/file/d/127SDuow1_wYQ4whVeD3kVEwxw7RCTYUl/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+                download
               >
-                <span>Download Cv</span> <FiDownload className="text-xl" />
-              </Button>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="uppercase flex items-center gap-2 hover:text-white "
+                >
+                  <span>Download CV</span> <FiDownload className="text-xl" />
+                </Button>
+              </a>
               <div className="mb-8 xl:mb-0">
                 <Social
                   containerStyles="flex gap-6"
@@ -39,7 +48,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Stats/>
+      <Stats />
     </section>
   );
 };

@@ -2,8 +2,8 @@ import { icons } from "lucide-react";
 import Link from "next/link";
 import {FaGithub,FaLinkedinIn,FaTwitter} from 'react-icons/fa';
 const socials = [
-    {icons:<FaGithub/>,path:''},
-    {icons:<FaLinkedinIn/>,path:''},
+    {icons:<FaGithub/>,path:'https://github.com/shahalam68'},
+    {icons:<FaLinkedinIn/>,path:'https://www.linkedin.com/in/a-k-m-shah-alam'},
     {icons:<FaTwitter/>,path:''},
 ]
 const Social = ({containerStyles,iconStyles}) => {

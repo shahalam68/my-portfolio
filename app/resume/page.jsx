@@ -64,34 +64,49 @@ const about = {
 };
 
 const experience = {
-  icon: "", // You can add an appropriate icon here
+  icon: "", 
   title: "My Experience",
   description:
-    "With a diverse background in web development, I have gained significant expertise working with multiple frameworks and platforms. From freelance WordPress design to full-stack development using Next.js and ASP.Net, I continuously strive to deliver optimized and scalable solutions.",
+    "With a diverse background in web development, I have gained significant expertise working with multiple frameworks and platforms. From freelance WordPress design to full-stack development using Next.js and React js,tailwind css,Zustend, I continuously strive to deliver optimized and scalable solutions.",
   items: [
+    {
+      company: "ReadyLab L.L.C",
+      position: "Software Engineer",
+      duration: "2025 Jan – Present",
+      description:
+        "Developing a loyalty game platform focusing on seamless user engagement and retention. Implementing authentication and authorization using Auth.js for a secure user experience. Managing state and real-time data efficiently with Zustand. Crafting responsive and intuitive UI components with Tailwind CSS. Ensuring scalability, maintainability, and performance optimization for a smooth user experience.",
+      techStack:
+        "Next.js, TypeScript, React Query, Zustand, Material UI, Tailwind CSS, Auth.js",
+    },
     {
       company: "TechForing Ltd.",
       position: "Frontend Developer",
-      duration: "2024 Aug - Present",
-      description: "Focused on designing and developing reactive web applications using Next.js, managing states, and integrating APIs for real-time data updates. Participated in code reviews and collaborated with the team to maintain coding standards.",
-      techStack: "Next.js, TypeScript, React Query, Zustand, Material UI, Tailwind CSS",
+      duration: "2024 Aug – 2024 Dec",
+      description:
+        "Focused on designing and developing reactive web applications using Next.js, managing states, and integrating APIs for real-time data updates. Participated in code reviews and collaborated with the team to maintain coding standards.",
+      techStack:
+        "Next.js, TypeScript, React Query, Zustand, Material UI, Tailwind CSS",
     },
     {
       company: "Astha IT Research & Consultancy Ltd.",
       position: "Software Engineer (Intern)",
-      duration: "2024 Mar - 2024 Jun",
-      description: "Developed reactive web applications using Next.js and ASP.Net Core. Managed states with Zustand, integrated APIs for real-time data updates, and participated in code reviews.",
-      techStack: "Next.js, TypeScript, React Query, Zustand, Material UI, ASP.Net Core Web API, PostgreSQL",
+      duration: "2024 Mar – 2024 Jun",
+      description:
+        "Developed reactive web applications using Next.js and ASP.Net Core. Managed states with Zustand, integrated APIs for real-time data updates, and participated in code reviews.",
+      techStack:
+        "Next.js, TypeScript, React Query, Zustand, Material UI, ASP.Net Core Web API, PostgreSQL",
     },
     {
       company: "Fiverr",
       position: "Freelance WordPress Web Designer",
-      duration: "2019 Feb - 2023 Dec",
-      description: "Completed over 50 projects as a freelance WordPress designer. Built e-commerce websites using Woocommerce and collaborated with various clients to deliver customized web solutions.",
+      duration: "2019 Feb – 2023 Dec",
+      description:
+        "Completed over 50 projects as a freelance WordPress designer. Built e-commerce websites using Woocommerce and collaborated with various clients to deliver customized web solutions.",
       techStack: "WordPress, Woocommerce",
     },
   ],
 };
+
 
 
 const education = {
@@ -218,35 +233,44 @@ const Resume = () => {
             <TabsTrigger value="about">About me</TabsTrigger>
           </TabsList>
           <div className="min-h-[70vh] w-full">
-            <TabsContent value="experience" className="w-full">
-              <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold">{experience.title}</h3>
-                <p className="max-w-[600px] text-white/60">
-                  {experience.description}
-                </p>
-                <ScrollArea className="h-[400px] ">
-                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
-                    {experience.items.map((item, index) => {
-                      return (
-                        <li
-                          key={item.index}
-                          className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-center gap-1"
-                        >
-                          <span className="text-accent">{item.duration}</span>
-                          <h3 className="text-xl max-w-[360px] text-center min-h-[60px] lg:text-left">
-                            {item.position}
-                          </h3>
-                          <div className="flex items-center gap-3">
-                            <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                            <p className="text-white/60">{item.company}</p>
-                          </div>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </ScrollArea>
+          <TabsContent value="experience" className="w-full">
+  <div className="flex flex-col gap-[30px] text-center xl:text-left">
+    <h3 className="text-4xl font-bold">{experience.title}</h3>
+    <p className="max-w-[600px] text-white/60">
+      {experience.description}
+    </p>
+    <ScrollArea className="h-[400px]">
+      <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+        {experience.items.map((item, index) => {
+          return (
+            <li
+              key={index}
+              className="bg-[#232329] py-6 px-10 rounded-xl flex flex-col gap-3"
+            >
+              <span className="text-accent">{item.duration}</span>
+              <h3 className="text-xl font-semibold">{item.position}</h3>
+              <div className="flex items-center gap-3">
+                <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                <p className="text-white/60">{item.company}</p>
               </div>
-            </TabsContent>
+
+              {/* Description */}
+              <p className="text-white/60 text-sm leading-relaxed">
+                {item.description}
+              </p>
+
+              {/* Tech stack */}
+              <p className="text-xs text-accent">
+                <strong>Tech Stack:</strong> {item.techStack}
+              </p>
+            </li>
+          );
+        })}
+      </ul>
+    </ScrollArea>
+  </div>
+</TabsContent>
+
             <TabsContent value="education" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{education.title}</h3>

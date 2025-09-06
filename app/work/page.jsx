@@ -7,6 +7,28 @@ import Image from "next/image";
 
 const projects = [
   {
+    num: "04",
+    category: "fullstack",
+    title: "Amar Plot",
+    description:
+      "A property buy, sell , and ren platfrom ",
+    stack: [{ name: "React.js" }, { name: " Shadcn UI" }, { name: "Node.js" }],
+    image: "/work/amarplot.png",
+    live: "https://amarplot.com", // ✅ Replace with real link
+    github: "https://github.com/yourusername/tech-foring", // ✅ GitHub repo
+  },
+  {
+    num: "03",
+    category: "fullstack",
+    title: "tech foring",
+    description:
+      "Cybersecurity consulting website with service booking and reports.",
+    stack: [{ name: "React.js" }, { name: "Material UI" }, { name: "Node.js" }],
+    image: "/work/Techforing.png",
+    live: "https://techforing.com", // ✅ Replace with real link
+    github: "https://github.com/yourusername/tech-foring", // ✅ GitHub repo
+  },
+  {
     num: "01",
     category: "frontend",
     title: "chat app",
@@ -14,8 +36,8 @@ const projects = [
       "A real-time chat app with typing indicators, online status, and group chat features.",
     stack: [{ name: "HTML 5" }, { name: "CSS 3" }, { name: "JavaScript" }],
     image: "/work/chatApp.png",
-    live: "",
-    github: "",
+    live: "https://yourchatappdemo.com",   // ✅ Add your live demo link
+    github: "https://github.com/yourusername/chat-app", // ✅ GitHub repo link
   },
   {
     num: "02",
@@ -29,21 +51,11 @@ const projects = [
       { name: "ASP.Net Core" },
     ],
     image: "/work/lawGurdPro.png",
-    live: "",
-    github: "",
-  },
-  {
-    num: "03",
-    category: "fullstack",
-    title: "tech foring",
-    description:
-      "Cybersecurity consulting website with service booking and reports.",
-    stack: [{ name: "React.js" }, { name: "Material UI" }, { name: "Node.js" }],
-    image: "/work/techForing.png",
-    live: "",
-    github: "",
+    live: "https://lowguardpro.com", // ✅ Add live site
+    github: "https://github.com/yourusername/low-guard-pro", // ✅ GitHub repo
   },
 ];
+
 
 const Work = () => {
   return (
@@ -61,9 +73,6 @@ const Work = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-white">
             My Projects
           </h2>
-          <p className="text-white/60 mt-2">
-            Modern card layout with smooth animations & hover effects
-          </p>
         </div>
 
         {/* Card Grid */}
@@ -107,20 +116,28 @@ const Work = () => {
                 </ul>
 
                 {/* Buttons */}
-                <div className="flex gap-4 mt-5">
-                  <Link
-                    href={project.live}
-                    className="flex items-center gap-1 text-accent text-sm hover:underline"
-                  >
-                    <BsArrowUpRight /> Live
-                  </Link>
-                  <Link
-                    href={project.github}
-                    className="flex items-center gap-1 text-accent text-sm hover:underline"
-                  >
-                    <BsGithub /> Code
-                  </Link>
-                </div>
+                {/* Buttons */}
+<div className="flex gap-4 mt-5">
+  {project.live && (
+    <Link
+      href={project.live}
+      target="_blank"
+      className="flex items-center gap-1 text-accent text-sm hover:underline"
+    >
+      <BsArrowUpRight /> Live
+    </Link>
+  )}
+  {/* {project.github && (
+    <Link
+      href={project.github}
+      target="_blank"
+      className="flex items-center gap-1 text-accent text-sm hover:underline"
+    >
+      <BsGithub /> Code
+    </Link>
+  )} */}
+</div>
+
               </div>
             </motion.div>
           ))}

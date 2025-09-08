@@ -13,7 +13,7 @@ const projects = [
     description:
       "A property buy, sell , and ren platfrom ",
     stack: [{ name: "React.js" }, { name: " Shadcn UI" }, { name: "Node.js" }],
-    image: "/work/amarplot.png",
+    image: "/work/AmarPlot.png",
     live: "https://amarplot.com", // ✅ Replace with real link
     github: "https://github.com/yourusername/tech-foring", // ✅ GitHub repo
   },
@@ -89,11 +89,11 @@ const Work = () => {
               {/* Image */}
               <div className="relative h-48 overflow-hidden">
                 <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover transition-transform duration-500 hover:scale-110"
-                />
+  src={project.image} // "/work/amarplot.png"
+  alt={project.title}
+  fill
+  className="object-cover transition-transform duration-500 hover:scale-110"
+/>
               </div>
 
               {/* Content */}

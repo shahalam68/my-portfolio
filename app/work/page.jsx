@@ -6,56 +6,98 @@ import Link from "next/link";
 import Image from "next/image";
 
 const projects = [
+  
   {
     num: "04",
-    category: "fullstack",
+    category: "Fullstack",
     title: "Amar Plot",
     description:
-      "A property buy, sell , and rent platfrom ",
-    stack: [{ name: "React.js" }, { name: " Shadcn UI" }, { name: "Node.js" }],
-    image: "/work/AmarPlot.png",
-    live: "https://amarplot.com", // ✅ Replace with real link
-    github: "https://github.com/yourusername/tech-foring", // ✅ GitHub repo
+      "A property marketplace platform that allows users to buy, sell, and rent properties. Features include secure authentication, property listings with images, and a smooth responsive UI for seamless user experience.",
+    stack: [{ name: "TypeScript" },{ name: "Next.js" }, { name: "Shadcn UI" }, { name: "Node.js" }],
+    image: "/work/amarplot.png",
+    live: "https://amarplot.com",
+    github: "https://github.com/yourusername/tech-foring",
+    workplace: "Personal Project",
   },
   {
-    num: "03",
-    category: "fullstack",
-    title: "tech foring",
+    num: "05",
+    category: "Frontend",
+    title: "Tech Foring",
     description:
-      "Cybersecurity consulting website with service booking and reports.",
-    stack: [{ name: "React.js" }, { name: "Material UI" }, { name: "Node.js" }],
+      "A cybersecurity consulting company website built with a focus on performance and scalability. Developed reusable UI components, improved SEO, and integrated third-party services to support business growth.",
+    stack: [{ name: "JavaScript" },{ name: "Next.js" }, { name: "Material UI" }, { name: "Python" }],
     image: "/work/techforing.png",
-    live: "https://techforing.com", // ✅ Replace with real link
-    github: "https://github.com/yourusername/tech-foring", // ✅ GitHub repo
+    live: "https://techforing.com",
+    github: "https://github.com/yourusername/tech-foring",
+    workplace: "TechForing Ltd.",
+  },
+  {
+    num: "06",
+    category: "Frontend",
+    title: "GameBD",
+    description:
+      "A gamified loyalty platform designed to boost customer engagement and retention. Includes real-time challenges, EXP tracking, and a responsive design optimized for mobile users.",
+    stack: [{ name: "TypeScript" },{ name: "Next.js" }, { name: "Shadcn UI" }, { name: "Python" }],
+    image: "/work/gamebd.png",
+    live: "https://play.gamebd.co/en",
+    github: "https://github.com/yourusername/tech-foring",
+    workplace: "ReadyLab L.L.C",
+  },
+  {
+    num: "07",
+    category: "Fullstack",
+    title: "ReadyLab Loyalty Game Platform",
+    description:
+      "A gamified loyalty experience built to enhance user engagement and retention. Features secure authentication, interactive challenges, EXP tracking, referral system, and a responsive UI powered by Shadcn UI and Tailwind CSS.",
+    stack: [
+      { name: "TypeScript" },
+      { name: "Next.js" },
+      { name: "Shadcn UI" },
+      { name: "Python" },
+    ],
+    image: "/work/readylab.png",
+    live: "https://game.readylab.co/",
+    github: "https://github.com/yourusername/readylab-loyalty",
+    workplace: "ReadyLab L.L.C",
   },
   {
     num: "01",
-    category: "frontend",
-    title: "chat app",
+    category: "Fullstack",
+    title: "HR Management System",
     description:
-      "A real-time chat app with typing indicators, online status, and group chat features.",
-    stack: [{ name: "HTML 5" }, { name: "CSS 3" }, { name: "JavaScript" }],
-    image: "/work/chatApp.png",
-    live: "https://yourchatappdemo.com",   // ✅ Add your live demo link
-    github: "https://github.com/yourusername/chat-app", // ✅ GitHub repo link
+      "A comprehensive HR management platform for employee data management, payroll processing, attendance tracking, and performance evaluation. Streamlines HR operations with automated workflows.",
+    stack: [{ name: "React" },{name:"Zustend"} ],
+    image: "/work/hrms.png",
+    live: "https://hrms-demo.com",
+    github: "https://github.com/yourusername/hrms",
+    workplace: "TechForing Ltd.",
   },
   {
     num: "02",
-    category: "fullstack",
-    title: "low guard pro",
+    category: "Fullstack",
+    title: "Content Management System",
     description:
-      "A legal services management platform with secure client portal.",
-    stack: [
-      { name: "Next.js" },
-      { name: "Material UI" },
-      { name: "ASP.Net Core" },
-    ],
-    image: "/work/lawGurdPro.png",
-    live: "https://lowguardpro.com", // ✅ Add live site
-    github: "https://github.com/yourusername/low-guard-pro", // ✅ GitHub repo
+      "A robust CMS platform enabling content creators to manage digital content efficiently. Features include role-based access control, content scheduling, media management, and SEO optimization tools.",
+    stack: [{ name: "React.js" }, { name: "Zustend" },],
+    image: "/work/cms.png",
+    live: "https://cms-demo.com",
+    github: "https://github.com/yourusername/cms",
+    workplace: "TechForing Ltd.",
   },
+  {
+    num: "03",
+    category: "Frontend",
+    title: "Career Platform",
+    description:
+      "A job portal and career development platform connecting job seekers with employers. Includes resume building tools, job matching algorithms, and interview preparation resources.",
+    stack: [{ name: "React.js" },  { name: "Material UI" },{ name: "Zuestend" },],
+    image: "/work/carrier.png",
+    live: "https://career-platform.com",
+    github: "https://github.com/yourusername/career-platform",
+    workplace: "Personal Project",
+  },
+ 
 ];
-
 
 const Work = () => {
   return (
@@ -89,11 +131,11 @@ const Work = () => {
               {/* Image */}
               <div className="relative h-48 overflow-hidden">
                 <Image
-  src={project.image} // "/work/amarplot.png"
-  alt={project.title}
-  fill
-  className="object-cover transition-transform duration-500 hover:scale-110"
-/>
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  className="object-cover transition-transform duration-500 hover:scale-110"
+                />
               </div>
 
               {/* Content */}
@@ -101,10 +143,17 @@ const Work = () => {
                 <h3 className="text-xl font-bold text-white mb-2">
                   {project.title}
                 </h3>
-                <p className="text-white/60 text-sm">{project.description}</p>
+                <p className="text-white/60 text-sm mb-2">
+                  {project.description}
+                </p>
+
+                {/* Workplace */}
+                <p className="text-xs text-accent font-medium mb-3">
+                  📍 {project.workplace}
+                </p>
 
                 {/* Stack Badges */}
-                <ul className="flex gap-2 mt-4 flex-wrap">
+                <ul className="flex gap-2 mt-2 flex-wrap">
                   {project.stack.map((item, idx) => (
                     <li
                       key={idx}
@@ -116,28 +165,26 @@ const Work = () => {
                 </ul>
 
                 {/* Buttons */}
-                {/* Buttons */}
-<div className="flex gap-4 mt-5">
-  {project.live && (
-    <Link
-      href={project.live}
-      target="_blank"
-      className="flex items-center gap-1 text-accent text-sm hover:underline"
-    >
-      <BsArrowUpRight /> Live
-    </Link>
-  )}
-  {/* {project.github && (
-    <Link
-      href={project.github}
-      target="_blank"
-      className="flex items-center gap-1 text-accent text-sm hover:underline"
-    >
-      <BsGithub /> Code
-    </Link>
-  )} */}
-</div>
-
+                <div className="flex gap-4 mt-5">
+                  {project.live && (
+                    <Link
+                      href={project.live}
+                      target="_blank"
+                      className="flex items-center gap-1 text-accent text-sm hover:underline"
+                    >
+                      <BsArrowUpRight /> Live
+                    </Link>
+                  )}
+                  {/* {project.github && (
+                    <Link
+                      href={project.github}
+                      target="_blank"
+                      className="flex items-center gap-1 text-accent text-sm hover:underline"
+                    >
+                      <BsGithub /> Code
+                    </Link>
+                  )} */}
+                </div>
               </div>
             </motion.div>
           ))}

@@ -7,14 +7,14 @@ const services = [
     title: "Web Development",
     description:
       "Highly motivated Full-Stack Web Developer with expertise in React.js and .NET, recognized for delivering clean, efficient, and reusable code. I focus on designing reactive web applications, managing states, and integrating APIs for real-time data updates.",
-    href: "",
+    href: "/contact",
   },
   {
     num: "02",
     title: "WordPress Design",
     description:
       "Experienced Freelance Web Designer on Fiverr with over 50+ projects completed. I specialize in WordPress design and have built multi-vendor e-commerce websites using Woocommerce. Achieved a level 1 seller badge through consistent delivery of quality projects.",
-    href: "",
+    href: "https://www.fiverr.com/shahalam68",
   },
 ];
 

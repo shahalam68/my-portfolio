@@ -111,13 +111,13 @@ const experience = {
 
 const education = {
   icon: "",
-  title: "My education",
+  title: "My Education",
   description:
-    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi aut omnis ex facilis perferendis, delectus quae eos.",
+    "I have completed multiple courses and degrees to strengthen my web development and software engineering skills, from WordPress to React, Next.js, and .NET technologies.",
   items: [
     {
       institution: "SoftTech-IT Institute",
-      degree: "Wordpress Development Course",
+      degree: "WordPress Development Course",
       duration: "2019",
     },
     {
@@ -127,7 +127,7 @@ const education = {
     },
     {
       institution: "Learn With Sumit",
-      degree: "React and NextJs ",
+      degree: "React and NextJs",
       duration: "2024",
     },
     {
@@ -136,7 +136,7 @@ const education = {
       duration: "2023",
     },
     {
-      institution: "Nachole Pilot High school ",
+      institution: "Nachole Pilot High school",
       degree: "Secondary School Certificate",
       duration: "2010",
     },
@@ -152,30 +152,31 @@ const education = {
     },
   ],
 };
+
 const skills = {
-  title: "My skills",
+  title: "My Skills",
   description:
-    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi aut omnis ex facilis perferendis, delectus quae eos.",
+    "I possess a strong skill set in both frontend and backend technologies, including modern frameworks, databases, and tools essential for building responsive and high-performing web applications.",
   skillList: [
     {
       icon: <FaHtml5 />,
-      name: "html 5",
+      name: "HTML5",
     },
     {
       icon: <FaCss3 />,
-      name: "css 3",
+      name: "CSS3",
     },
     {
       icon: <FaJs />,
-      name: "javascript",
+      name: "JavaScript",
     },
     {
       icon: <TbBrandCSharp />,
-      name: "c sharp",
+      name: "C#",
     },
     {
       icon: <FaReact />,
-      name: "react.js",
+      name: "React.js",
     },
     {
       icon: <SiDotnet />,
@@ -183,14 +184,12 @@ const skills = {
     },
     {
       icon: <SiTailwindcss />,
-      name: "tailwind.css",
+      name: "Tailwind CSS",
     },
     {
       icon: <FaNodeJs />,
-      name: "Node.Js",
+      name: "Node.js",
     },
-    
-    
     {
       icon: <SiMongodb />,
       name: "MongoDB",
@@ -209,6 +208,7 @@ const skills = {
     },
   ],
 };
+
 const Resume = () => {
   return (
     <motion.div

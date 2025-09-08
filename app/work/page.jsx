@@ -19,18 +19,7 @@ const projects = [
     github: "https://github.com/yourusername/tech-foring",
     workplace: "Personal Project",
   },
-  {
-    num: "05",
-    category: "Frontend",
-    title: "Tech Foring",
-    description:
-      "A cybersecurity consulting company website built with a focus on performance and scalability. Developed reusable UI components, improved SEO, and integrated third-party services to support business growth.",
-    stack: [{ name: "JavaScript" },{ name: "Next.js" }, { name: "Material UI" }, { name: "Python" }],
-    image: "/work/techforing.png",
-    live: "https://techforing.com",
-    github: "https://github.com/yourusername/tech-foring",
-    workplace: "TechForing Ltd.",
-  },
+  
   {
     num: "06",
     category: "Frontend",
@@ -45,7 +34,7 @@ const projects = [
   },
   {
     num: "07",
-    category: "Fullstack",
+    category: "FrontEnd",
     title: "ReadyLab Loyalty Game Platform",
     description:
       "A gamified loyalty experience built to enhance user engagement and retention. Features secure authentication, interactive challenges, EXP tracking, referral system, and a responsive UI powered by Shadcn UI and Tailwind CSS.",
@@ -59,29 +48,16 @@ const projects = [
     live: "https://game.readylab.co/",
     github: "https://github.com/yourusername/readylab-loyalty",
     workplace: "ReadyLab L.L.C",
-  },
-  {
-    num: "01",
-    category: "Fullstack",
-    title: "HR Management System",
+  },{
+    num: "05",
+    category: "Frontend",
+    title: "Tech Foring",
     description:
-      "A comprehensive HR management platform for employee data management, payroll processing, attendance tracking, and performance evaluation. Streamlines HR operations with automated workflows.",
-    stack: [{ name: "React" },{name:"Zustend"} ],
-    image: "/work/hrms.png",
-    live: "https://hrms-demo.com",
-    github: "https://github.com/yourusername/hrms",
-    workplace: "TechForing Ltd.",
-  },
-  {
-    num: "02",
-    category: "Fullstack",
-    title: "Content Management System",
-    description:
-      "A robust CMS platform enabling content creators to manage digital content efficiently. Features include role-based access control, content scheduling, media management, and SEO optimization tools.",
-    stack: [{ name: "React.js" }, { name: "Zustend" },],
-    image: "/work/cms.png",
-    live: "https://cms-demo.com",
-    github: "https://github.com/yourusername/cms",
+      "A cybersecurity consulting company website built with a focus on performance and scalability. Developed reusable UI components, improved SEO, and integrated third-party services to support business growth.",
+    stack: [{ name: "JavaScript" },{ name: "Next.js" }, { name: "Material UI" }, { name: "Python" }],
+    image: "/work/techforing.png",
+    live: "https://techforing.com",
+    github: "https://github.com/yourusername/tech-foring",
     workplace: "TechForing Ltd.",
   },
   {
@@ -92,9 +68,33 @@ const projects = [
       "A job portal and career development platform connecting job seekers with employers. Includes resume building tools, job matching algorithms, and interview preparation resources.",
     stack: [{ name: "React.js" },  { name: "Material UI" },{ name: "Zuestend" },],
     image: "/work/carrier.png",
-    live: "https://career-platform.com",
+    live: "https://career.techforing.com/",
     github: "https://github.com/yourusername/career-platform",
     workplace: "Personal Project",
+  },
+  {
+    num: "01",
+    category: "FrontEnd",
+    title: "HR Management System",
+    description:
+      "A comprehensive HR management platform for employee data management, payroll processing, attendance tracking, and performance evaluation. Streamlines HR operations with automated workflows.",
+    stack: [{ name: "React" },{name:"Zustend"} ],
+    image: "/work/hrms.png",
+    live: "https://hrms.techforing.com/login",
+    github: "https://github.com/yourusername/hrms",
+    workplace: "TechForing Ltd.",
+  },
+  {
+    num: "02",
+    category: "FrontEnd",
+    title: "Content Management System",
+    description:
+      "A robust CMS platform enabling content creators to manage digital content efficiently. Features include role-based access control, content scheduling, media management, and SEO optimization tools.",
+    stack: [{ name: "React.js" }, { name: "Zustend" },],
+    image: "/work/cms.png",
+    live: "https://cms.techforing.com/login",
+    github: "https://github.com/yourusername/cms",
+    workplace: "TechForing Ltd.",
   },
  
 ];

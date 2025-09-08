@@ -1,3 +1,5 @@
+'use client'
+import { motion } from "framer-motion";
 import Photo from "@/components/Photo";
 import Social from "@/components/Social";
 import Stats from "@/components/Stats";
@@ -11,10 +13,15 @@ const Home = () => {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 pb-24">
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">Software Developer</span>
-            <h1 className="h1 mb-6">
-              Hello I&apos;m <br />{" "}
+            <motion.h1
+              className="h1 mb-6"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+            >
+              Hello I&apos;m <br />
               <span className="text-accent">A.K.M Shah Alam</span>
-            </h1>
+            </motion.h1>
             <p className="max-w-[500px] mb-9 text-white/80 ">
               I excel at creating elegant digital experiences and I am proficient
               in various programming languages and technologies.

@@ -11,7 +11,7 @@ const projects = [
     category: "fullstack",
     title: "Amar Plot",
     description:
-      "A property buy, sell , and ren platfrom ",
+      "A property buy, sell , and rent platfrom ",
     stack: [{ name: "React.js" }, { name: " Shadcn UI" }, { name: "Node.js" }],
     image: "/work/AmarPlot.png",
     live: "https://amarplot.com", // ✅ Replace with real link
@@ -24,7 +24,7 @@ const projects = [
     description:
       "Cybersecurity consulting website with service booking and reports.",
     stack: [{ name: "React.js" }, { name: "Material UI" }, { name: "Node.js" }],
-    image: "/work/Techforing.png",
+    image: "/work/techforing.png",
     live: "https://techforing.com", // ✅ Replace with real link
     github: "https://github.com/yourusername/tech-foring", // ✅ GitHub repo
   },

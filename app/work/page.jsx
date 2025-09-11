@@ -14,7 +14,7 @@ const projects = [
     description:
       "A property marketplace platform that allows users to buy, sell, and rent properties. Features include secure authentication, property listings with images, and a smooth responsive UI for seamless user experience.",
     stack: [{ name: "TypeScript" },{ name: "Next.js" }, { name: "Shadcn UI" }, { name: "Node.js" }],
-    image: "/work/amarplot.png",
+    image: "/work/amarplot.jpg",
     live: "https://amarplot.com",
     github: "https://github.com/yourusername/tech-foring",
     workplace: "Personal Project",
@@ -55,7 +55,7 @@ const projects = [
     description:
       "A cybersecurity consulting company website built with a focus on performance and scalability. Developed reusable UI components, improved SEO, and integrated third-party services to support business growth.",
     stack: [{ name: "JavaScript" },{ name: "Next.js" }, { name: "Material UI" }, { name: "Python" }],
-    image: "/work/techforing.png",
+    image: "/work/techforing.jpg",
     live: "https://techforing.com",
     github: "https://github.com/yourusername/tech-foring",
     workplace: "TechForing Ltd.",

@@ -100,7 +100,7 @@ const Projects = () => {
                           <BsArrowUpRight className="text-white/20 group-hover:text-accent group-hover:rotate-45 transition-all duration-500 text-xl" />
                         </div>
                         <p className="text-white/40 text-base font-medium leading-relaxed italic line-clamp-2">
-                          "{project.description}"
+                          &quot;{project.description}&quot;
                         </p>
                       </div>
 

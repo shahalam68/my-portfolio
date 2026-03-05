@@ -2,10 +2,10 @@
 import { SkeletonCard, SkeletonSkill } from "@/components/Skeleton";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
+    Tooltip,
+    TooltipContent,
+    TooltipProvider,
+    TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { api } from "@/lib/api";
 import { AnimatePresence, motion } from "framer-motion";
@@ -190,7 +190,7 @@ const Resume = () => {
                               <p className="text-white/60 font-black text-lg tracking-wide uppercase opacity-80">{item.company}</p>
                             </div>
                             <p className="text-white/40 leading-relaxed text-lg font-medium italic">
-                              "{item.description}"
+                              &quot;{item.description}&quot;
                             </p>
                             {item.techStack && (
                               <div className="flex flex-wrap gap-3 pt-6 border-t border-white/5">

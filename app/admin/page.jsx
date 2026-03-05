@@ -60,7 +60,7 @@ export default function AdminDashboard() {
       <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}>
         <p className="text-[10px] text-accent/60 font-black uppercase tracking-[0.5em] mb-2">Overview</p>
         <h1 className="text-3xl xl:text-4xl font-black text-white tracking-tight">Dashboard</h1>
-        <p className="text-white/30 text-sm mt-2">Welcome back! Here's your portfolio at a glance.</p>
+        <p className="text-white/30 text-sm mt-2">Welcome back! Here&apos;s your portfolio at a glance.</p>
       </motion.div>
 
       {/* Stat Cards */}

@@ -48,10 +48,10 @@ const Contact = () => {
             <form className="flex flex-col gap-10 p-12 xl:p-20 glass-morphism rounded-[4rem] border-white/5 relative overflow-hidden">
               <div className="space-y-4 relative z-10">
                 <h3 className="text-3xl xl:text-4xl font-black text-accent uppercase tracking-tighter leading-none">
-                  Let's Connect
+                  Let&apos;s Connect
                 </h3>
                 <p className="text-white/40 text-sm xl:text-base font-medium leading-relaxed">
-                  I'm available for new opportunities and collaborations. Reach out to discuss your next big idea.
+                  I&apos;m available for new opportunities and collaborations. Reach out to discuss your next big idea.
                 </p>
                 <div className="w-20 h-1 bg-accent rounded-full opacity-50"></div>
               </div>

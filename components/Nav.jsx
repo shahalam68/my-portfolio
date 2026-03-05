@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Button } from "./ui/button";
 const links = [
   {
     name: "home",
@@ -16,8 +15,8 @@ const links = [
     path: "/resume",
   },
   {
-    name: "work",
-    path: "/work",
+    name: "projects",
+    path: "/projects",
   },
 
   {

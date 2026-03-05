@@ -1,25 +1,61 @@
 @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
-  
-  @layer base {
-    body{
-      @apply font-primary bg-primary text-white leading-loose ;
-    }
-    .h1{
-      @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;
-    }
-    .h2{
-      @apply text-[36px] xl:text-[48px] leading-[1.1] font-semibold;
-    }
-    .h3{
-      @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
-    }
-    .text-outline {
-      -webkit-text-stroke: 1px #ffff;
-    }
-    .text-outline-hover {
-      -webkit-text-stroke: 1px #00ff99;
-    }
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-primary bg-[#030712] text-white leading-loose selection:bg-accent/30 selection:text-white;
+    background-image: 
+      radial-gradient(at 0% 0%, hsla(160, 100%, 50%, 0.03) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, hsla(220, 100%, 50%, 0.03) 0px, transparent 50%),
+      radial-gradient(at 100% 100%, hsla(160, 100%, 50%, 0.03) 0px, transparent 50%),
+      radial-gradient(at 0% 100%, hsla(220, 100%, 50%, 0.03) 0px, transparent 50%);
+    background-attachment: fixed;
   }
- 
+
+  .h1 {
+    @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;
+  }
+  .h2 {
+    @apply text-[36px] xl:text-[48px] leading-[1.1] font-semibold;
+  }
+  .h3 {
+    @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
+  }
+
+  .text-outline {
+    -webkit-text-stroke: 1px #ffffff;
+    @apply text-transparent transition-all duration-500;
+  }
+
+  .text-outline-hover:hover {
+    -webkit-text-stroke: 1px #00ff99;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-accent/20 rounded-full hover:bg-accent/40 transition-all;
+  }
+}
+
+@layer components {
+  .glass-morphism {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.37)];
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-accent/30 rounded-full;
+  }
+}

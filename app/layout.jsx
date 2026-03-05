@@ -1,8 +1,7 @@
+import Header from "@/components/Header";
+import PremiumTransition from "@/components/PremiumTransition";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
-import PageTransition from "@/components/PageTransition";
-import StairTransition from "@/components/StairTransition";
 
 const JetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -12,7 +11,7 @@ const JetBrainsMono = JetBrains_Mono({
 
 export const metadata = {
   title: "Shah Alam",
-  description: "This is shah alam&apos;s portfolio ",
+  description: "This is shah alam's portfolio ",
   icons: {
     icon: '/assets/photo.png',
   },
@@ -23,8 +22,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={JetBrainsMono.className}>
         <Header />
-        <StairTransition/>
-        <PageTransition>{children}</PageTransition>
+        <PremiumTransition>{children}</PremiumTransition>
       </body>
     </html>
   );

@@ -47,7 +47,7 @@ export default function AdminLayout({ children }) {
 
       {/* Sidebar */}
       <aside
-        className={`fixed top-0 left-0 h-full w-64 z-30 flex flex-col transition-transform duration-500 ease-[cubic-bezier(0.33,1,0.68,1)]
+        className={`fixed top-0 left-0 h-full w-64 z-30 flex flex-col transition-transform duration-500 ease-out
           ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'} lg:translate-x-0 lg:static lg:z-auto
           bg-white/[0.02] backdrop-blur-2xl border-r border-white/5`}
       >

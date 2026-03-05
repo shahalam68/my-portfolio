@@ -85,7 +85,7 @@ const Projects = () => {
                         src={project.image}
                         alt={project.title}
                         fill
-                        className="object-cover transition-transform duration-[1.5s] group-hover:scale-110"
+                        className="object-cover transition-transform duration-[1500ms] group-hover:scale-110"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-[#030712] via-transparent to-transparent opacity-60"></div>
                     </div>

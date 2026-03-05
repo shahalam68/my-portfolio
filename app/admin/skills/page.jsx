@@ -140,6 +140,7 @@ export default function SkillsPage() {
                       <div className="flex items-center gap-3">
                         {skill.iconUrl && (
                           <div className="w-8 h-8 rounded bg-white/5 overflow-hidden relative border border-white/10">
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img src={skill.iconUrl} alt={skill.name} className="object-cover w-full h-full" />
                           </div>
                         )}

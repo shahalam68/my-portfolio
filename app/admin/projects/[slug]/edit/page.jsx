@@ -24,7 +24,7 @@ export default function EditProjectPage() {
           workplace: project.workplace || '',
           stack: project.stack?.length ? project.stack : [{ name: '' }],
           image: project.image || '',
-          images: Array.isArray(project.images) ? project.images.join('\n') : '',
+          images: Array.isArray(project.images) ? project.images : [],
           live: project.live || '',
           github: project.github || '',
           challenge: project.caseStudy?.challenge || '',

@@ -50,9 +50,16 @@ export default function ProjectForm({ initialData = EMPTY_FORM, mode = 'create',
       const payload = {
         ...form,
         stack: form.stack.filter((s) => s.name.trim()),
-        images: Array.isArray(form.images) ? form.images : [],
-        caseStudy: { challenge: form.challenge, solution: form.solution, impact: form.impact },
+        images: Array.isArray(form.images) ? form.images.filter(img => typeof img === 'string' && img.trim() !== '') : [],
+        caseStudy: { 
+          challenge: form.challenge || '', 
+          solution: form.solution || '', 
+          impact: form.impact || '' 
+        },
       };
+
+      // Ensure no duplicates in images
+      payload.images = [...new Set(payload.images)];
       delete payload.challenge; delete payload.solution; delete payload.impact;
 
       if (mode === 'create') {

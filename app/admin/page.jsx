@@ -55,7 +55,7 @@ export default function AdminDashboard() {
   ];
 
   return (
-    <div className="space-y-12">
+    <div className="space-y-12 pt-28">
       {/* Header */}
       <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}>
         <p className="text-[10px] text-accent/60 font-black uppercase tracking-[0.5em] mb-2">Overview</p>

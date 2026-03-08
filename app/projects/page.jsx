@@ -41,12 +41,15 @@ const Projects = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16 space-y-4"
+          className="text-center mb-24 space-y-6 max-w-3xl mx-auto relative"
         >
-          <h2 className="text-3xl xl:text-4xl font-black text-white uppercase tracking-tighter">
-            Selected Work<span className="text-accent">.</span>
+          <h3 className="text-6xl xl:text-8xl font-black text-white uppercase tracking-tighter leading-none opacity-10 absolute -top-12 left-1/2 -translate-x-1/2 pointer-events-none select-none w-full">
+            Portfolio
+          </h3>
+          <h2 className="text-3xl xl:text-4xl font-black text-white uppercase tracking-tighter leading-none relative z-10">
+            Selected Work
           </h2>
-          <p className="text-white/40 text-sm font-medium max-w-xl mx-auto">
+          <p className="text-white/40 text-base font-medium tracking-tight leading-relaxed">
             A showcase of engineered solutions, from scalable web apps to high-performance architectures.
           </p>
           <div className="w-24 h-1 bg-accent mx-auto rounded-full opacity-50"></div>

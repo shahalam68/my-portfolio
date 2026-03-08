@@ -37,6 +37,25 @@ const Contact = () => {
   return (
     <section className="min-h-screen pt-36 pb-12 xl:pt-32 xl:pb-20">
       <div className="container mx-auto px-4">
+        {/* Standardized Header */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-center mb-24 space-y-6 max-w-3xl mx-auto relative"
+        >
+          <h3 className="text-6xl xl:text-8xl font-black text-white uppercase tracking-tighter leading-none opacity-10 absolute -top-12 left-1/2 -translate-x-1/2 pointer-events-none select-none w-full">
+            Connect
+          </h3>
+          <h2 className="text-3xl xl:text-4xl font-black text-white uppercase tracking-tighter leading-none relative z-10">
+            Get In Touch
+          </h2>
+          <p className="text-white/40 text-base font-medium tracking-tight leading-relaxed">
+            I&apos;m available for new opportunities and collaborations. Reach out to discuss your next big idea.
+          </p>
+          <div className="w-24 h-1 bg-accent mx-auto rounded-full opacity-50"></div>
+        </motion.div>
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -50,9 +69,6 @@ const Contact = () => {
                 <h3 className="text-3xl xl:text-4xl font-black text-accent uppercase tracking-tighter leading-none">
                   Let&apos;s Connect
                 </h3>
-                <p className="text-white/40 text-sm xl:text-base font-medium leading-relaxed">
-                  I&apos;m available for new opportunities and collaborations. Reach out to discuss your next big idea.
-                </p>
                 <div className="w-20 h-1 bg-accent rounded-full opacity-50"></div>
               </div>
 

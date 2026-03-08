@@ -4,11 +4,11 @@ import CountUp from "react-countup";
 
 const stats = [
     {
-        num: 1.5,
+        num: 2,
         text: "Years of custom web development experience"
     },
     {
-        num: 6,
+        num: 8,
         text: "Professional projects I’ve worked on in my jobs" // broad work experience
     },
     {
@@ -16,7 +16,7 @@ const stats = [
         text: "WordPress projects I’ve worked on" // WordPress-specific
     },
     {
-        num: 900,
+        num: 1200,
         text: "Code commits"
     },
 ];
